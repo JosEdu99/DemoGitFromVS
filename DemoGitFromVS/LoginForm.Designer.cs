@@ -32,6 +32,7 @@
             this.txtContraseña = new System.Windows.Forms.Label();
             this.txtboxUsuario = new System.Windows.Forms.TextBox();
             this.txtboxContraseña = new System.Windows.Forms.TextBox();
+            this.btnSesion = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUsuario
@@ -67,17 +68,27 @@
             this.txtboxContraseña.Size = new System.Drawing.Size(100, 20);
             this.txtboxContraseña.TabIndex = 3;
             // 
+            // btnSesion
+            // 
+            this.btnSesion.Location = new System.Drawing.Point(275, 77);
+            this.btnSesion.Name = "btnSesion";
+            this.btnSesion.Size = new System.Drawing.Size(326, 180);
+            this.btnSesion.TabIndex = 4;
+            this.btnSesion.Text = "INICIAR SESIÓN";
+            this.btnSesion.UseVisualStyleBackColor = true;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSesion);
             this.Controls.Add(this.txtboxContraseña);
             this.Controls.Add(this.txtboxUsuario);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.lblUsuario);
             this.Name = "LoginForm";
-            this.Text = "LoginForm";
+            this.Text = "Inicio de sesión";
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -90,5 +101,6 @@
         private System.Windows.Forms.Label txtContraseña;
         private System.Windows.Forms.TextBox txtboxUsuario;
         private System.Windows.Forms.TextBox txtboxContraseña;
+        private System.Windows.Forms.Button btnSesion;
     }
 }
